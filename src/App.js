@@ -1,9 +1,11 @@
 import AppRouter from "./router/AppRouter";
+import theme from "./components/GlobalStyles/theme"
+import { ThemeProvider } from "styled-components"
 
 function App() {
-  return <div>
+  return <ThemeProvider theme={theme}>
     <AppRouter/>
-  </div>;
+  </ThemeProvider>;
 }
 
 export default App;
